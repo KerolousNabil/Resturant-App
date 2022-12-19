@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.foodapp.Pojo.CategoriesAdapters
+import com.example.foodapp.Adapters.CategoriesAdapters
 import com.example.foodapp.Pojo.Categories
 import com.example.foodapp.Pojo.Food
-import com.example.foodapp.Pojo.FoodAdapters
+import com.example.foodapp.Adapters.FoodAdapters
 import com.example.foodapp.R
 import com.example.foodapp.Ui.card.CardActivity
 import com.example.foodapp.databinding.ActivityMainBinding

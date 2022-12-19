@@ -1,4 +1,4 @@
-package com.example.foodapp.Helper
+package com.example.foodapp.Adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,12 +8,14 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.foodapp.Helper.ChangeNumberItemListner
+import com.example.foodapp.Helper.ManegmentCard
 import com.example.foodapp.Pojo.Food
 import com.example.foodapp.R
 
 class CardListAdapters : RecyclerView.Adapter<CardListAdapters.MyViewHolder>{
     private lateinit var foodlistselected : ArrayList<Food>
-    private lateinit var manegmentCard:ManegmentCard
+    private lateinit var manegmentCard: ManegmentCard
     private lateinit var changeNumberItemListner: ChangeNumberItemListner
 
 
@@ -52,7 +54,8 @@ class CardListAdapters : RecyclerView.Adapter<CardListAdapters.MyViewHolder>{
         Glide.with(holder.itemView.context).load(drawableResource).into(holder.imageFood)
 
         holder.plusItem.setOnClickListener {
-            manegmentCard.plusNumberFood(foodlistselected,position , object : ChangeNumberItemListner{
+            manegmentCard.plusNumberFood(foodlistselected,position , object :
+                ChangeNumberItemListner {
                 override fun changed() {
                     notifyDataSetChanged()
                     changeNumberItemListner.changed()
@@ -61,7 +64,8 @@ class CardListAdapters : RecyclerView.Adapter<CardListAdapters.MyViewHolder>{
             })
         }
         holder.minusItem.setOnClickListener {
-            manegmentCard.minusNumberFood(foodlistselected,position , object : ChangeNumberItemListner{
+            manegmentCard.minusNumberFood(foodlistselected,position , object :
+                ChangeNumberItemListner {
                 override fun changed() {
                     notifyDataSetChanged()
                     changeNumberItemListner.changed()

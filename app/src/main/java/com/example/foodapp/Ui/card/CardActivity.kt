@@ -4,10 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.widget.ActivityChooserView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.foodapp.Helper.CardListAdapters
+import com.example.foodapp.Adapters.CardListAdapters
 import com.example.foodapp.Helper.ChangeNumberItemListner
 import com.example.foodapp.Helper.ManegmentCard
 import com.example.foodapp.R

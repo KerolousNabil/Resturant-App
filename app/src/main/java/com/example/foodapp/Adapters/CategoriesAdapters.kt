@@ -1,4 +1,4 @@
-package com.example.foodapp.Pojo
+package com.example.foodapp.Adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.foodapp.Pojo.Categories
 import com.example.foodapp.R
 
 class CategoriesAdapters(var mycontext : Context, private val categorieslist : ArrayList<Categories>) : RecyclerView.Adapter<CategoriesAdapters.MyViewHolder>() {
